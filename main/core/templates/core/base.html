@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>{% block title %}{% endblock %} | Inicio</title>
+
+   {% load static %}
+
+
+
+  <!-- MDB icon -->
+  <link rel="icon" href="{% static 'core/img/mdb-favicon.ico" type="image/x-icon' %}">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="{% static 'core/css/bootstrap.min.css' %}">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="{% static 'core/css/mdb.min.css' %}">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'core/css/ajustes.css' %}">
+
+
+
+</head>
+<body>
+
+  <!-- Start your project here-->  
+  <nav class="navbar ajt-mobile-nav  navbar-expand-md navbar-dark  mb-5">
+    <!-- Just an image -->
+    <a class="navbar-brand mx-auto" href="#!">
+      <img src="{% static 'core/img/company/logo_black.png' %}" height="100" alt="logo">
+    </a>
+  </nav>
+
+ <div class="nav-ajt sticky-top">
+
+
+  <!-- Start your project here-->  
+  <nav class="navbar  navbar-expand-md navbar-dark  mb-5">
+    <!-- Just an image -->
+    <a class="navbar-brand mx-auto" href="#!">
+      <img src="{% static 'core/img/company/logo_black.png' %}" height="100" alt="logo">
+    </a>
+  </nav>
+
+
+  
+  
+ 
+  
+  
+  <hr />
+
+
+  <nav class="nav-desk " id="navbar">
+    <ul class="nav-desk" id="stickymenu">
+      <li>Inicio</li>
+      <li>Cursos</li>
+      <li>Blog</li>
+      <li>Fotos</li>
+      <li>Agenda</li>
+      <li>Coaching</li>
+      <li>Anderson Karkow</li>
+    </ul>
+  </nav>
+</div> 
+
+  
+<!-- Grid column*****navegador hamburguesa mobile -->
+  <div class=" sticky-top ajt-mt d-xl-none">
+  
+    <nav class="navbar  navbar-expand-md navbar-dark primary-color no-content ">
+      <!-- SideNav slide-out button -->
+      <div class="float-left">
+        <a class="white-text button-collapse" href="#!" data-activates="slide-out"  data-toggle="collapse" data-target="#navbarSupportedContent1"><i class="fas fa-bars"></i></a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+        <!-- Links -->
+    
+      </div>
+      <!-- Collapsible content -->
+      <!-- Breadcrumb-->
+      <div class="mr-auto">
+        <nav aria-label="breadcrumb">
+        
+        </nav>
+      </div>
+      <ul class="navbar-nav ml-auto nav-flex-icons">
+        <li class="nav-item">
+          <a class="nav-link"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"><i class="fab fa-google-plus-g"></i></a>
+        </li>
+      </ul>
+    </nav>
+  
+  </div>
+  <!-- Grid column *****navegador hamburguesa mobile-->
+
+<div class="container-fluid">
+
+ {% block content %}{% endblock %}
+ </div>
+
+<!-- Footer -->
+<!-- Footer -->
+<footer class="page-footer font-small cyan darken-3">
+ 
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 flex-center">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+         
+         
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+        
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> creatibyte.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+  <div class="btn-whatsapp">
+      <a href="https://api.whatsapp.com/send?phone=595983249005&text=Hola!%20Estoy%20escribiendo%20desde%20la%20web%20de%20Código%20Forte" target="_blank" rel="noopener noreferrer">
+          <img src="{% static 'core/img/company/btn_whatsapp.png' %}" alt="whatsapp">
+      </a>
+  </div>
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="{% static 'core/js/jquery.min.js' %}"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="{% static 'core/js/popper.min.js' %}"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="{% static 'core/js/bootstrap.min.js' %}"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="{% static 'core/js/mdb.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'core/js/ajustes.js' %}"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+</body>
+</html>

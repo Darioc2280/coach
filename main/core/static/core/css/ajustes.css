@@ -1,0 +1,235 @@
+
+
+
+
+
+
+/*ul valores*/
+
+ul.valores{
+    list-style: none;
+    
+}
+ul.valores li{
+    margin-left: -30px;
+}
+/*WHATSAPP BOTTOM*/
+.btn-whatsapp
+{
+    display: block;
+    width: 70px;
+    height: 70px;
+    color #fff;
+    position: fixed;
+    right: 155px;
+    bottom: 60px;
+    border-radius: 50%;
+    line-height: 80px;
+    text-align: center;
+    z-index: 999;
+}
+/*css del mapa mdbootstrap*/
+.map-container-9,
+.map-container-10,
+.map-container-11 {
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container-9 iframe
+.map-container-10 iframe
+.map-container-11 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+/*xm // xtraSmall devices */
+@media (min-width: 320px) { 
+    div.ajt-mt{
+        margin-top: -50px;
+    }
+    nav.nav-desk{
+        display: none;
+        
+    }
+
+    span.title-dec {
+        color: #f2791e;
+        margin-top: -71px;
+        position: absolute;
+        margin-left: 129px;
+        font-size: 41px;
+        font-weight: 900;
+    }
+    h3.subtitle{
+        color: #1a728b;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 900;
+    }
+    ol.list-dec {
+        width: 100%;
+    }
+    ol.list-dec li{
+        list-style: none;
+        font-size: 25px;
+        font-weight: 400;
+        color: #1a728b;
+        padding: 8px;
+        
+       }
+       div.nav-ajt{
+        display: none;
+    }
+
+}
+
+/*sm // Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+    nav.nav-desk{
+        display: none;
+    }
+    nav.ajt-mobile-nav{
+        display: flex;
+    }
+    div.nav-ajt{
+        display: none;
+    }
+    
+ }
+
+ /* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+    nav.nav-desk{
+        display: none;
+    }
+    nav.ajt-mobile-nav{
+        display: flex;
+    }
+    div.nav-ajt{
+        display: none;
+    }
+ }
+
+
+ 
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    nav.ajt-mobile-nav{
+        display: flex;
+    }
+    div.nav-ajt{
+        display: none;
+    }
+
+}
+ /*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    
+    .navbar-brand{
+        padding-right: 1015px;
+        width: 80%;
+    }
+
+    nav.nav-desk{
+        display: inherit;
+        margin-left: 102px;
+        margin-top: -144px;
+    }
+    nav.nav-desk li{
+        list-style: none;
+        display:inline;
+        padding: 13px;
+        z-index: 1;
+    }
+    
+    /*arreglar el hover de mi menu*/  
+    nav.nav-desk li:hover{
+        list-style: none;
+        display: inline;
+        padding: 9px;
+        color: rgb(255, 255, 255);
+        background-color: #f2791e;
+        font-size: 17px;
+        font-weight: 900;
+        border-radius: 12px;
+    }/*arreglar el hover de mi menu*/
+
+    span.title-dec {
+        color: #f2791e;
+        margin-top: -69px;
+        position: absolute;
+        margin-left: 90px;
+        font-size: 40px;
+        font-weight: 900;
+    }
+
+    ul.nav-desk{
+    margin-left: 430px;
+    margin-bottom: 50px;
+    margin-top: -70px;
+    padding: 16px;
+    }
+
+      
+    p{
+        margin: 10px;
+    }
+    
+    .solidblockmenu{
+        margin: 0;
+        padding: 0;
+        float: left;
+        font: bold 14px Arial;
+        width: 100%;
+        overflow: hidden;
+        top: 0;
+        position: sticky;
+        margin-bottom: 1em;
+        border: 1px solid #625e00;
+        background: black;
+        border-width: 1px 0;
+    }
+    
+    
+    .solidblockmenu li{
+        display: inline;
+    }
+    
+    .solidblockmenu li a{
+        float: left;
+        color: white;
+        padding: 12px 11px;
+        text-decoration: none;
+        border-right: 1px solid white;
+    }
+    
+    .solidblockmenu li a:visited{
+        color: white;
+    }
+    
+    .solidblockmenu li a:hover, .solidblockmenu li .current{
+        color: white;
+        background: darkred;
+    }
+    div.ajt{
+        margin-top: 120px;
+        margin-right: 75px;
+    }
+    div.nav-ajt{
+        display: block;
+        background-color: white;
+    }
+
+    nav.ajt-mobile-nav{
+        
+display: none;
+    }
+
+}
+
+

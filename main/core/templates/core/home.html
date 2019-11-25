@@ -1,0 +1,996 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Portada{% endblock %}
+
+
+
+
+{% block content %}
+ {% load static %}
+  <!--Carousel Wrapper-->
+<div id="carousel-example-2" class="carousel slide carousel-fade mt-3" data-ride="carousel">
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-2" data-slide-to="1"></li>
+    <li data-target="#carousel-example-2" data-slide-to="2"></li>
+  </ol>
+  <!--/.Indicators-->
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <div class="view">
+        <img class="d-block w-100" src="{% static 'core/img/company/slide1.png' %}"
+          alt="First slide">
+        <div class="mask rgba-black-light"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">ALTA PERFORMANCE</h3>
+        <p>PROFISSIONAL</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="{% static 'core/img/company/slide2.png' %}"
+          alt="Second slide">
+        <div class="mask rgba-black-strong"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">LIDERANÇA E </h3>
+        <p>GESTÃO DE PESSOAS</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="{% static 'core/img/company/slide3.png' %}"
+          alt="Third slide">
+        <div class="mask rgba-black-slight"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">COACHING</h3>
+        <p> GROUP</p>
+      </div>
+    </div>
+  </div>
+  <!--/.Slides-->
+  <!--Controls-->
+  <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <!--/.Controls-->
+</div>
+<!--/.Carousel Wrapper-->
+
+
+
+
+
+ <!-- Section -->
+ <section class="bg-primary z-depth-1">
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+            <iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/VEitiKVEAhA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row no-gutters">
+
+      <div class="col-lg-6 order-md-2">
+        <div class="view">
+          <img class="img-fluid" src="{% static 'core/img/company/videoview.png' %}" alt="Video title">
+          <div class="mask flex-center rgba-black-light">
+            <a id="play" class="btn-floating btn-danger btn-lg" data-toggle="modal" data-target="#modal1"><i class="fas fa-play"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mx-auto d-flex align-items-center text-white">
+        <div class="px-4 py-4 py-lg-0">
+          <h3 class="font-weight-normal mb-4">“Suas atitudes de hoje serão responsáveis pelos seus resultados de amanhã”</h3>
+          
+        </div>
+      </div>
+
+    </div>
+    
+  </section>
+  <!-- Section -->
+<hr><br>
+
+
+
+ <!--Section: Content-->
+ <section class="white-text grey p-5 rounded">
+    
+    <h3 class="text-center font-weight-bold mb-4 pb-2">Resultados</h3>
+
+    <div class="row">
+
+      <div class="col-md-4 mb-4">
+        <div class="row">
+          <div class="col-6 pr-0">
+            <h4 class="display-4 text-right mb-0 count-up" data-from="0" data-to="42" data-time="2000">42</h4>
+          </div>
+
+          <div class="col-6">
+            <p class="text-uppercase font-weight-normal mb-1">Empresas</p>
+            <p class="mb-0"><i class="fas fa-briefcase fa-2x mb-0"></i></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="row">
+          <div class="col-6 pr-0">
+            <h4 class="display-4 text-right mb-0 count1" data-from="0" data-to="3500" data-time="2000">3,500</h4>
+          </div>
+
+          <div class="col-6">
+            <p class="text-uppercase font-weight-normal mb-1">Trnasformados</p>
+            <p class="mb-0"><i class="fas fa-user fa-2x mb-0"></i></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="row">
+          <div class="col-6 pr-0">
+            <h4 class="display-4 text-right"><span class="d-flex justify-content-end"><span class="count2" data-from="0" data-to="100" data-time="2000">0</span> %</span></h4>
+          </div>
+
+          <div class="col-6">
+            <p class="text-uppercase font-weight-normal mb-1">satisfação</p>
+            <p class="mb-0"><i class="fas fa-smile fa-2x mb-0"></i></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!--Section: Content-->
+
+
+<hr>
+<br>
+
+      <!--Section: Content-->
+      <section class="px-md-5 mx-md-5 text-center dark-grey-text">
+  
+        <!--Grid row-->
+        <div class="row">
+          
+          
+          
+         
+          
+         
+          
+          <!--Grid column de mi seccion contacto-->
+          <div class="col-md-6 ajt mb-md-0">
+  
+            <h3 class="font-weight-bold">Valores IDT</h3>
+  
+           <ul class="valores">
+             <li>Comprometimento com resultados positivos</li>
+             <li>Honestidade e ética</li>
+             <li>Sigilo profissional</li>
+             <li>Paixão pelo cliente</li>
+             <li>Respeito e responsabilidade com o cliente e com a sociedade.</li>
+           </ul>
+           
+  
+            <hr class="my-5">
+  
+            <p class="font-weight-bold">Siga-nos:</p>
+  
+            <!--Facebook-->
+            <a href="#" class="mx-1" role="button"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="mx-1" role="button"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="mx-1" role="button"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="mx-1" role="button"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="mx-1" role="button"><i class="fab fa-pinterest"></i></a>
+            <a href="#" class="mx-1" role="button"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="mx-1" role="button"><i class="fab fa-github"></i></a>
+            <a href="#" class="mx-1" role="button"><i class="fab fa-stack-overflow"></i></a>
+  
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column de mi formulario -->
+          <div class="col-md-5 mb-4 mb-md-0">
+  
+                      <!-- Default form contact -->
+            <form class="text-center border border-light p-5" action="#!">
+
+                <p class="h4 mb-4">Entre em contato conosco</p>
+
+                <!-- Name -->
+                <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Nome">
+
+                <!-- Email -->
+                <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+                <!-- Subject -->
+                <label>Subject</label>
+                <select class="browser-default custom-select mb-4">
+                    <option value="" disabled>Atuar/Aperfeiçoar como Coach Profissional</option>
+                    <option value="1" selected>Desenvolvimento Profissional</option>
+                    <option value="2">Desenvolvimento Pessoal</option>
+                    <option value="3">Aplicar Coaching na Empresa</option>
+                    <option value="4">Autoconhecimento com Coaching</option>
+                </select>
+
+                <!-- Message -->
+                <div class="form-group">
+                    <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Mensagem"></textarea>
+                </div>
+
+                <!-- Copy -->
+                <div class="custom-control custom-checkbox mb-4">
+                    <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+                </div>
+
+                <!-- Send button -->
+                <button class="btn btn-info btn-block" type="submit">Enviar</button>
+
+            </form>
+            <!-- Default form contact -->
+  
+          </div>
+          <!--Grid column-->
+  
+        </div>
+        <!--Grid row-->
+  
+  
+      </section>
+      <!--Section: Content-->
+      
+      
+      <hr><br>
+  
+  
+  <!--Section: Content-->
+  <section class="text-center">
+
+      <!-- Section heading -->
+      <h3 class="font-weight-bold mb-5">TUDO O QUE PROCURA ESTÁ AQUI</h3>
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+  
+          <!-- Card -->
+          <div class="card hoverable">
+  
+            <!-- Card image -->
+            <img class="card-img-top" src="{% static 'core/img/blog/1.jpg' %}" alt="Card image cap">
+  
+            <!-- Card content -->
+            <div class="card-body">
+  
+              <!-- Title -->
+              <p class="card-title text-muted text-uppercase font-small mt-1 mb-3">Coaching Personal</p>
+              <!-- Text -->
+              <p class="mb-2">ALTA PERFORMANCE PROFISSIONAL</p>
+  
+            </div>
+  
+          </div>
+          <!-- Card -->
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+  
+          <!-- Card -->
+          <div class="card hoverable">
+  
+            <!-- Card image -->
+            <img class="card-img-top" src="{% static 'core/img/blog/2.jpg' %}" alt="Card image cap">
+  
+            <!-- Card content -->
+            <div class="card-body">
+  
+              <!-- Title -->
+              <p class="card-title text-muted text-uppercase font-small mt-1 mb-3">Coaching Empresarial</p>
+              <!-- Text -->
+              <p class="mb-2">COACHING PARA ALTA PERFORMANCE</p>
+  
+            </div>
+  
+          </div>
+          <!-- Card -->
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-6 mb-0">
+  
+          <!-- Card -->
+          <div class="card hoverable">
+  
+            <!-- Card image -->
+            <img class="card-img-top" src="{% static 'core/img/blog/3.jpg' %}" alt="Card image cap">
+  
+            <!-- Card content -->
+            <div class="card-body">
+  
+              <!-- Title -->
+              <p class="card-title text-muted text-uppercase font-small mt-1 mb-3">Inteligencia Emocional</p>
+              <!-- Text -->
+              <p class="mb-2">LIDERANÇA E GESTÃO DE PESSOAS</p>
+  
+            </div>
+  
+          </div>
+          <!-- Card -->
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </section>
+    <!--Section: Content-->
+  
+  <hr><br>
+
+
+  
+  <!--Section: Content-->
+  <section class="dark-grey-text text-center">
+
+      <style>
+        .md-pills .nav-link.active {
+          
+          border: 1px solid #3f51b5;
+          margin-bottom: 5px;
+        }
+      </style>
+      
+      <!-- Section heading -->
+      <h3 class="font-weight-bold mb-4 pb-2">Cursos</h3>
+      <!-- Section description -->
+      <p class="text-muted w-responsive mx-auto mb-5">
+        os melhores e mais profissionais cursos</p>
+      
+        <!--First row-->
+        <div class="row">
+          
+          <!--First column-->
+          <div class="col-12">
+            
+            <!-- Nav tabs -->
+            <ul class="nav md-pills flex-center flex-wrap mx-0" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active font-weight-bold" data-toggle="tab" href="#panel31" role="tab">TODOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link font-weight-bold" data-toggle="tab" href="#panel32" role="tab">INTELIGÊNCIA EMOCIONAL</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link font-weight-bold" data-toggle="tab" href="#panel33" role="tab">PNL</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link font-weight-bold" data-toggle="tab" href="#panel34" role="tab">EMPRENDIMENTO</a>
+              </li>
+            </ul>
+            
+          </div>
+          <!--First column-->
+  
+      </div>
+      <!--First row-->
+      
+      <!--Tab panels-->
+      <div class="tab-content">
+  
+        <!--Panel 1-->
+        <div class="tab-pane fade show in active" id="panel31" role="tabpanel">
+  
+          <!--First row-->
+          <div class="row">
+            
+            <!--First column-->
+            <div class="col-lg-4 col-md-12 mb-4">
+              <!--Featured image-->
+              <div class="view overlay zoom z-depth-2">
+                <img src="{% static 'core/img/cursos/1.png' %}" class="img-fluid">
+              </div>
+              <p class="text-uppercase text-center font-weight-bold text-muted my-4">MULHERES SUPER PODEROSAS</p>
+            </div>
+            <!--First column-->
+            
+            <!--Second column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <!--Featured image-->
+              <div class="view overlay zoom z-depth-2">
+                <img src="{% static 'core/img/cursos/2.png' %}" class="img-fluid">
+              </div>
+              <p class="text-uppercase text-center font-weight-bold text-muted my-4">KIDS COACHING</p>
+            </div>
+            <!--Second column-->
+            
+            <!--Third column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <!--Featured image-->
+              <div class="view overlay zoom z-depth-2">
+                <img src="{% static 'core/img/cursos/3.png' %}" class="img-fluid">
+              </div>
+              <p class="text-uppercase text-center font-weight-bold text-muted my-4">LIFE COACHING</p>
+            </div>
+            <!--Third column-->
+            
+          </div>
+          <!--First row-->
+  
+        </div>
+        <!--Panel 1-->
+  
+        <!--Panel 2-->
+        <div class="tab-pane fade" id="panel32" role="tabpanel">
+  
+          <!--First row-->
+          <div class="row">
+            
+            <!--First column-->
+            <div class="col-lg-4 col-md-12 mb-4">
+              <!--Featured image-->
+              <div class="view overlay zoom z-depth-2">
+                <img src="{% static 'core/img/cursos/4.png' %}" class="img-fluid">
+              </div>
+              <p class="text-uppercase text-center font-weight-bold text-muted my-4">COACHING PARA ALTA PERFORMANCE</p>
+            </div>
+            <!--First column-->
+            
+            <!--Second column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <!--Featured image-->
+              <div class="view overlay zoom z-depth-2">
+                <img src="{% static 'core/img/cursos/5.png' %}" class="img-fluid">
+              </div>
+              <p class="text-uppercase text-center font-weight-bold text-muted my-4">LIDERANÇA E GESTÃO DE PESSOAS</p>
+            </div>
+            <!--Second column-->
+            
+            <!--Third column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <!--Featured image-->
+              <div class="view overlay zoom z-depth-2">
+                <img src="{% static 'core/img/cursos/6.png' %}" class="img-fluid">
+              </div>
+              <p class="text-uppercase text-center font-weight-bold text-muted my-4">  COACHING GROUP</p>
+            </div>
+            <!--Third column-->
+            
+          </div>
+          <!--First row-->
+  
+        </div>
+        <!--Panel 2-->
+  
+        <!--Panel 3-->
+        <div class="tab-pane fade" id="panel33" role="tabpanel">
+  
+          <!--First row-->
+          <div class="row">
+            
+            <!--First column-->
+            <div class="col-lg-4 col-md-12 mb-4">
+              <!--Featured image-->
+              <div class="view overlay zoom z-depth-2">
+                <img src="{% static 'core/img/cursos/6.png' %}" class="img-fluid">
+              </div>
+              <p class="text-uppercase text-center font-weight-bold text-muted my-4">
+                VENDEDOR DE EXCELÊNCIAt</p>
+            </div>
+            <!--First column-->
+            
+            <!--Second column-->
+            <div class="col-lg-4 col-md-6">
+              <!--Featured image-->
+              <div class="view overlay zoom z-depth-2">
+                <img src="{% static 'core/img/cursos/3.png' %}" class="img-fluid">
+              </div>
+              <p class="text-uppercase text-center font-weight-bold text-muted my-4">ALTA PERFORMANCE PROFISSIONAL</p>
+            </div>
+            <!--Second column-->
+            
+            <!--Third column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <!--Featured image-->
+              <div class="view overlay zoom z-depth-2">
+                <img src="{% static 'core/img/cursos/2.png' %}" class="img-fluid">
+              </div>
+              <p class="text-uppercase text-center font-weight-bold text-muted my-4">  BUSINESS COACHING</p>
+            </div>
+            <!--Third column-->
+  
+          </div>
+          <!--First row-->
+  
+        </div>
+        <!--Panel 3-->
+  
+        <!--Panel 4-->
+        <div class="tab-pane fade" id="panel34" role="tabpanel">
+  
+          <!--First row-->
+          <div class="row">
+            
+            <!--First column-->
+            <div class="col-lg-4 col-md-12 mb-4">
+              <!--Featured image-->
+              <div class="view overlay zoom z-depth-2">
+                <img src="{% static 'core/img/cursos/4.png' %}" class="img-fluid">
+              </div>
+              <p class="text-uppercase text-center font-weight-bold text-muted my-4">LIDERANÇA E GESTÃO DE PESSOAS</p>
+            </div>
+            <!--First column-->
+            
+            <!--Second column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <!--Featured image-->
+              <div class="view overlay zoom z-depth-2">
+                <img src="{% static 'core/img/cursos/5.png' %}" class="img-fluid">
+              </div>
+              <p class="text-uppercase text-center font-weight-bold text-muted my-4">FORMAÇÃO PROFISSIONAL COACHING</p>
+            </div>
+            <!--Second column-->
+            
+            <!--Third column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <!--Featured image-->
+              <div class="view overlay zoom z-depth-2">
+                <img src="{% static 'core/img/cursos/6.png' %}" class="img-fluid">
+              </div>
+              <p class="text-uppercase text-center font-weight-bold text-muted my-4">COACHING PESSOAL</p>
+            </div>
+            <!--Third column-->
+            
+          </div>
+          <!--First row-->
+  
+        </div>
+        <!--Panel 4-->
+  
+      </div>
+      <!--Tab panels-->
+  
+    </section>
+
+
+    <hr> <br>
+
+
+
+
+<div class="container my-5">
+
+
+  <!--Section: Content-->
+  <section class="magazine-section dark-grey-text">
+
+    <!-- Section heading -->
+    <h3 class="text-center font-weight-bold mb-4 pb-2">Eventos</h3>
+    <!-- Section description -->
+    <p class="text-center w-responsive mx-auto mb-5">Registro e detalhes de todos os eventos.</p>
+
+  	<!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-lg-4 col-md-12 mb-4">
+
+        <!-- Featured news -->
+        <div class="single-news mb-3">
+
+          <!-- Image -->
+          <div class="view overlay rounded z-depth-2 mb-4">
+            <img class="img-fluid" src="{% static 'core/img/events/1.jpg' %}" alt="Sample image">
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+
+          <!-- Grid row -->
+          <div class="row mb-3">
+
+            <!-- Grid column -->
+            <div class="col-12">
+
+
+
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row -->
+
+          <!-- Title -->
+          <div class="d-flex justify-content-between">
+            <div class="col-11 text-truncate pl-0 mb-3">
+              <a class="font-weight-bold">BE BRAVE</a>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- Featured news -->
+
+        <!-- Small news -->
+        <div class="single-news mb-3">
+
+          <!-- Title -->
+          <div class="d-flex justify-content-between">
+            <div class="col-11 text-truncate pl-0 mb-3">
+              <a>SABADO 30 DE NOVEMBRO / 15:00 hs</a>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- Small news -->
+
+        <!-- Small news -->
+        <div class="single-news mb-3">
+
+          <!-- Title -->
+          <div class="d-flex justify-content-between">
+            <div class="col-11 text-truncate pl-0 mb-3">
+              <a>lOCAL: LUGAR DO EVENTO</a>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- Small news -->
+
+        <!-- Small news -->
+        <div class="single-news mb-3">
+
+          <!-- Title -->
+          <div class="d-flex justify-content-between">
+            <div class="col-11 text-truncate pl-0 mb-3">
+              <a>MAIS INFO DO EVENTO.</a>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- Small news -->
+
+        <!-- Small news -->
+        <div class="single-news">
+
+          <!-- Title -->
+          <div class="d-flex justify-content-between">
+            <div class="col-11 text-truncate pl-0">
+              <a>MAIS INFO DO EVENTO.</a>
+            </div>
+
+          </div>
+           <button class="btn blue-gradient">PARTICIPAR</button>
+
+        </div>
+        <!-- Small news -->
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-4 col-md-6 mb-4">
+
+        <!-- Featured news -->
+        <div class="single-news mb-3">
+
+          <!-- Image -->
+          <div class="view overlay rounded z-depth-2 mb-4">
+            <img class="img-fluid" src="{% static 'core/img/events/2.jpg' %}" alt="Sample image">
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+
+          <!-- Grid row -->
+          <div class="row mb-3">
+
+            <!-- Grid column -->
+            <div class="col-12">
+
+
+
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row -->
+
+          <!-- Title -->
+          <div class="d-flex justify-content-between">
+            <div class="col-11 text-truncate pl-0 mb-3">
+              <a class="font-weight-bold">This is title of the news</a>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- Featured news -->
+
+       <!-- Small news -->
+        <div class="single-news mb-3">
+
+          <!-- Title -->
+          <div class="d-flex justify-content-between">
+            <div class="col-11 text-truncate pl-0 mb-3">
+              <a>SABADO 30 DE NOVEMBRO / 15:00 hs</a>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- Small news -->
+
+        <!-- Small news -->
+        <div class="single-news mb-3">
+
+          <!-- Title -->
+          <div class="d-flex justify-content-between">
+            <div class="col-11 text-truncate pl-0 mb-3">
+              <a>lOCAL: LUGAR DO EVENTO</a>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- Small news -->
+
+        <!-- Small news -->
+        <div class="single-news mb-3">
+
+          <!-- Title -->
+          <div class="d-flex justify-content-between">
+            <div class="col-11 text-truncate pl-0 mb-3">
+              <a>MAIS INFO DO EVENTO.</a>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- Small news -->
+
+        <!-- Small news -->
+        <div class="single-news">
+
+          <!-- Title -->
+          <div class="d-flex justify-content-between">
+            <div class="col-11 text-truncate pl-0">
+              <a>MAIS INFO DO EVENTO.</a>
+            </div>
+
+          </div>
+           <button class="btn blue-gradient">PARTICIPAR</button>
+
+        </div>
+        <!-- Small news -->
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-4 col-md-6 mb-4">
+
+        <!-- Featured news -->
+        <div class="single-news mb-3">
+
+          <!-- Image -->
+          <div class="view overlay rounded z-depth-2 mb-4">
+            <img class="img-fluid" src="{% static 'core/img/events/3.jpg' %}" alt="Sample image">
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+
+          <!-- Grid row -->
+          <div class="row mb-3">
+
+            <!-- Grid column -->
+            <div class="col-12">
+
+              <!-- Badge -->
+
+
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row -->
+
+          <!-- Title -->
+          <div class="d-flex justify-content-between">
+            <div class="col-11 text-truncate pl-0 mb-3">
+              <a class="font-weight-bold">This is title of the news</a>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- Featured news -->
+
+        <!-- Small news -->
+        <div class="single-news mb-3">
+
+          <!-- Title -->
+          <div class="d-flex justify-content-between">
+            <div class="col-11 text-truncate pl-0 mb-3">
+              <a>SABADO 30 DE NOVEMBRO / 15:00 hs</a>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- Small news -->
+
+        <!-- Small news -->
+        <div class="single-news mb-3">
+
+          <!-- Title -->
+          <div class="d-flex justify-content-between">
+            <div class="col-11 text-truncate pl-0 mb-3">
+              <a>lOCAL: LUGAR DO EVENTO</a>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- Small news -->
+
+        <!-- Small news -->
+        <div class="single-news mb-3">
+
+          <!-- Title -->
+          <div class="d-flex justify-content-between">
+            <div class="col-11 text-truncate pl-0 mb-3">
+              <a>MAIS INFO DO EVENTO.</a>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- Small news -->
+
+        <!-- Small news -->
+        <div class="single-news">
+
+          <!-- Title -->
+          <div class="d-flex justify-content-between">
+            <div class="col-11 text-truncate pl-0">
+              <a>MAIS INFO DO EVENTO.</a>
+            </div>
+
+          </div>
+           <button class="btn blue-gradient">PARTICIPAR</button>
+
+        </div>
+        <!-- Small news -->
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </section>
+  <!--Section: Content-->
+
+
+</div>
+
+
+<hr><br>
+    <!--Section: Content-->
+  <section class="text-center white-text grey p-5"
+  style="background-image: url(https://mdbootstrap.com/img/Photos/Others/background.jpg);">
+
+  <!--Grid row-->
+  <div class="row d-flex justify-content-center">
+
+    <!--Grid column-->
+    <div class="col-md-6">
+      
+      
+        <h3 class="font-weight-bold">Como podemos transformar sua vida ?</h3>
+
+        <p>Venha fazer parte de um time que está transformando vidas!</p>
+
+      
+        <a href="#" class="btn btn-outline-white btn-md waves-effect" role="button"><i class="fas fa-hands-helping"></i>Saiba mais</a>
+
+    </div>
+    <!--Grid column-->
+
+  </div>
+  <!--Grid row-->
+
+</section>
+<!--Section: Content-->
+
+<hr><br>
+
+
+  
+  <!-- Section: Block Content -->
+  <section class="mb-4">
+
+      <style>
+        .map-container {
+          overflow: hidden;
+          position: relative;
+          height: 0;
+        }
+  
+        .map-container iframe {
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+        }
+      </style>
+  
+      <div class="card">
+  
+        <div class="row">
+          <div class="col-md-6">
+  
+            <!-- Google Maps -->
+            <div id="map-within-card-2" class="map-container rounded-left" style="height: 400px">
+             
+              <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14405.270171831547!2d-54.5598136!3d-25.4944542!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spy!4v1574431104405!5m2!1ses-419!2spy" frameborder="0"
+                style="border:0" allowfullscreen></iframe>
+            </div>
+            <!-- Google Maps -->
+  
+          </div>
+          
+
+
+  
+          <div class="col-10 col-md-4 mx-auto align-self-center py-4">
+  
+            <h6 class="font-weight-bold grey-text text-uppercase small">Instituto Despertando Talentos</h6>
+            <h5 class="font-weight-normal mb-4">Avenida Silvio Américo Sasdelli, 2170 - Salas 15/16</h5>
+            <p class="text-muted font-weight-light">Vila A - Foz do Iguaçu - PR</p>
+            <p class="text-muted font-weight-light mb-0"> (45) 3029-9444<br>(45) 99993-5007</p>
+  
+          </div>
+        </div>
+  
+      </div>
+  
+    </section>
+    <!-- Section: Block Content -->
+
+{% endblock %}
